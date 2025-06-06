@@ -76,3 +76,6 @@ crashlytics-build.properties
 
 # macOS generate file
 .DS_Store
+
+# keystore
+*.keystore
