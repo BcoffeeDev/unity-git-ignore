@@ -9,6 +9,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+.utmp/
+*.log
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -16,6 +18,10 @@
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
+
+# By default Unity supports Blender asset imports; Blender backup files do not need to be committed.
+*.blend1
+*.blend1.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -55,30 +61,56 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
+# Mono auto generated files
+mono_crash.*
+
 # Builds
 *.apk
 *.aab
 *.unitypackage
+*.unitypackage.meta
 *.app
 
 # Crashlytics generated file
 crashlytics-build.properties
 
+# TestRunner generated files
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Test results
+/TestResults/
+
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
-# Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+# Visual Scripting auto-generated files
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# Addressables default ignores
+/ServerData
+/[Aa]ssets/[Ss]treamingAssets/aa*
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/link.xml*
+/[Aa]ssets/[Aa]ddressables_Temp*
 
 # Rider generate file
 .idea/
 
+# JetBrains Rider personal-layer settings
+*.DotSettings.user
+
 # macOS generate file
 .DS_Store
 
+# Windows generate files
+Thumbs.db
+Desktop.ini
+
 # keystore
 *.keystore
+*.jks
 
-# Android build cache
-**/.utmp/*
+# VS Code settings (optional)
+# .vscode/
