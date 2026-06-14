@@ -112,5 +112,5 @@ Desktop.ini
 *.keystore
 *.jks
 
-# VS Code settings (optional)
-# .vscode/
+# VS Code settings
+.vscode/
